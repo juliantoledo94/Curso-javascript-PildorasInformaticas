@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+        #contenedor{
+            width: 75px;
+            background-color: aqua;
+            margin: auto;
+            padding: 50px;
+
+
+
+
+        }
+
+
+
+
+</style>
+
+<script>
+
+var trabajadores = new Array();
+
+var persona = "";
+
+var contador=0;
+
+</script>
+
+
+</head>
+<body>
+    
+<div id="contenedor">
+<p>
+
+<script>
+
+while(persona!= "salir"){
+
+    persona=prompt("introduce trabajador");
+
+    trabajadores[contador]=persona;
+    
+    contador++;
+
+    /*if(persona!="salir"){
+
+        trabajadores[contador]=persona;
+    
+        contador++;
+    }*/
+   
+
+}
+
+trabajadores.pop();
+
+for(var i=0; i<trabajadores.length;i++){
+
+    document.write(trabajadores[i]+"</br>");
+
+}
+
+
+</script>
+
+
+
+
+</p>
+
+
+
+</div>
+
+</body>
+</html>
